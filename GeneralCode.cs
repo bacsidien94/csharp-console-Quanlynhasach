@@ -21,11 +21,11 @@ namespace csharp_Quanlynhasach
             string result = String.Empty;
             if (invType == 1)
             {
-                result = "Ban Hang";
+                result = "Ban Sach";
             }
             else
             {
-                result = "Nhap Hang";
+                result = "Nhap Sach";
             }
             return result;
         }

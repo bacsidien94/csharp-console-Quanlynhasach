@@ -19,7 +19,6 @@ This diagram illustrates all classes and their attributes & methods have been de
 ![alt text](https://github.com/bacsidien94/csharp-Quanlynhasach/blob/master/class-diagram.png)
 
 
-
 ### Change log  
 
 ```
@@ -30,7 +29,7 @@ This diagram illustrates all classes and their attributes & methods have been de
 * **0.5** - *main function for purchase invoice added* - *done*
 * **0.6** - *validation added* - *done*
 * **0.7** - *constraint added* - *done*
-* **0.8** - *remove redundancy* - *TBD*
+* **0.8** - *remove redundancy* - *done*
 * **0.9** - *document & diagram added* - *done*
-* **1.0** - "submit to google classroom* - *TBD*
+* **1.0** - "submit to google classroom* - *done*
 ```

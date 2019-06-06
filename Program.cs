@@ -9,7 +9,7 @@ namespace csharp_Quanlynhasach
             initial();
             //testing new function here
             //test();
-           
+            //Console.ReadLine();
             //chương trình bắt đầu 
             menuScreen();
         }
@@ -183,7 +183,7 @@ namespace csharp_Quanlynhasach
                         Console.WriteLine("\nChuc nang tim kiem Hoa Don Ban Sach");
                         Console.Write("Nhap Hoa Don Ban Sach can tim: ");
                         string inputvar = Console.ReadLine();
-                        Invoice.inqInvoice(inputvar);
+                        Invoice.inqInvoice(inputvar,1);
                         break;
                     }
 
@@ -214,7 +214,7 @@ namespace csharp_Quanlynhasach
                         Console.WriteLine("\nChuc nang tim kiem Hoa Don Nhap Sach");
                         Console.Write("Nhap Hoa Don Nhap Sach can tim: ");
                         string inputvar = Console.ReadLine();
-                        Invoice.inqInvoice(inputvar);
+                        Invoice.inqInvoice(inputvar,2);
                         break;
                     }
 
@@ -236,13 +236,16 @@ namespace csharp_Quanlynhasach
         //self test befor submit
         static void test()
         {
+            //Book.chkbookQty("0");
+            //Book.chkbookQty("-1");
+            //Book.chkbookQty("6");
             /*
              * Console.Write("Nhap Hoa Don Ban Sach can tim: ");
             string inputvar = Console.ReadLine();
             Invoice.inqInvoice(inputvar);
             */
             //Invoice.inqInvoice("0005");
-            Book.inqBookbybookYear(3);
+            //Book.inqBookbybookYear(3);
             //Book.calculatebookYear(2014);
             // MyInvoice.find_InvIndex("00005");
             //Invoice.deleteInvoice("0005");

@@ -58,7 +58,7 @@ namespace csharp_Quanlynhasach
         public static bool chkbookQty(string bookQty)
         {
            
-            if (Regex.IsMatch(bookQty, "^[0-9]*$"))
+            if (Regex.IsMatch(bookQty, "^[0-9]*$") && bookQty != "0" && int.Parse(bookQty) > 0)
             {
                 return true;
             }
@@ -121,7 +121,6 @@ namespace csharp_Quanlynhasach
             //validation
             while (chkbookID(newbook.bookID) || newbook.bookID.Length > 8)
             {
-                //Console.Write("Vui lòng nhập mã sách tối đa 08 ký tự hoặc mã sách đã tồn tại ");
                 Console.Write("Vui long nhap Ma Sach khac toi da 08 ky tu: ");
                 newbook.bookID = Console.ReadLine();
             }

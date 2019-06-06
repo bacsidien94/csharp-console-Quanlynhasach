@@ -256,6 +256,7 @@ namespace csharp_Quanlynhasach
             MyInvoice.printInv(newInv.invNo);
         }
 
+        //tim kiem hoa don 
         public static Invoice inqInvoice(string invNo)
         {
             bool isFound = false;
@@ -283,7 +284,61 @@ namespace csharp_Quanlynhasach
             }
             return result;
         }
-       // chi cho sua ten nguoi phat hanh hoa don
+
+        public static Invoice inqInvoice(string invNo,int invType)
+        {
+            bool isFound = false;
+            Invoice result = new Invoice();
+            //1 - hoa don ban hang / 2 - hoa don mua hang
+            if (invType == 1)
+            {
+                for (int i = 0; i < MyInvoice.myinv.Count; i++)
+                {
+                    if (MyInvoice.myinv[i].invNo == invNo && MyInvoice.myinv[i].invType == 1)
+                    {
+                        isFound = true;
+                        //lay thong tin
+                        result = MyInvoice.myinv[i];
+                        //in thong tin hoa don sau khi tim duoc 
+                        MyInvoice.printInv(invNo);
+                        break;
+                    }
+                    else
+                    {
+                        isFound = false;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < MyInvoice.myinv.Count; i++)
+                {
+                    if (MyInvoice.myinv[i].invNo == invNo && MyInvoice.myinv[i].invType == 2)
+                    {
+                        isFound = true;
+                        //lay thong tin
+                        result = MyInvoice.myinv[i];
+                        //in thong tin hoa don sau khi tim duoc 
+                        MyInvoice.printInv(invNo);
+                        break;
+                    }
+                    else
+                    {
+                        isFound = false;
+                    }
+                }
+            }
+
+
+
+            if (isFound == false)
+            {
+                Console.WriteLine("\nKhong co thong tin Hoa Don tren");
+            }
+            return result;
+        }
+
+        // chi cho sua ten nguoi phat hanh hoa don
         public static void updateInvoice(string invNo)
         {
             string filePath = @"../../myInvoice.txt";

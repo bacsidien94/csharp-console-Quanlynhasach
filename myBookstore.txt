@@ -4,3 +4,5 @@
 00004#The Rise and Fall of the Dino#William Morrow#14#2017#6#30
 00005#Becoming Michelle Obama#Crown#19#2017#3#0
 00006#The Alchemist#HaperCollins#26#2015#4#0
+00019#Dau An Rong Thieng#Alpha Books#12#1998#2#0
+00012#Oxford Learner Pocket#Oxford#9#2015#4#0
