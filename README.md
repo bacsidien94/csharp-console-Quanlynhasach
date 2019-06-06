@@ -16,6 +16,7 @@ This project is created for personal continuing learning - DTTXQM
 
 ```
 This diagram illustrates all classes and their attributes & methods have been defined  - class-diagram.png
+![alt text](https://github.com/bacsidien94/csharp-Quanlynhasach/blob/master/class-diagram.png)
 
 
 
